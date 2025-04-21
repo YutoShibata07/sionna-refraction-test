@@ -20,8 +20,16 @@ This project aims to test and demonstrate the refraction capabilities of the [Si
 
 2.  Install the required Python packages using `uv`:
     ```bash
+    uv venv .venv -p 3.11
+    . .venv/bin/activate 
     uv pip install requirements.txt
     ```
+
+## Configuration Details
+
+*   The scene configuration, including object geometry and materials, is defined within the Sionna setup (likely in the notebook or related Python scripts).
+*   For reference, the original Blender (`.blend`) files used to create the scene geometry are located in the `data/` directory. You can open these files using Blender to inspect the original models and layout if needed.
+
 
 ## How to Test
 
